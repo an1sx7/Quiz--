@@ -1,6 +1,6 @@
 function right() {
-  alert('صحيح')
+  alert('✅صحيح')
 }
 function wrong(){
-  alert('خطا');
+  alert('❌خطا');
 }
