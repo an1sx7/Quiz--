@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+*{
+  font-family: "Readex Pro", sans-serif;
+}
+body{
+  background:black;
+  background-attachment: fixed;
+  direction: rtl
+}
+h1{
+  text-align:center;
+  text-transform: uppercase ;
+  color:white;
+  animation: title 2s infinite both;
+}
+.container{
+  height:100%;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+button{
+  width:90%;
+  height:50px;
+  margin-top:10px;
+  border:none;
+  border-radius:10px;
+  font-size:20px;
+  animation: soso 3s backwards;
+  animation-timeline:view();
+  animation-range: 0%  50%
+}
+h2{
+  background:ghostwhite;
+  width:90%;
+  text-align: center;
+  padding:7px 0;
+  border:1px solid black;
+  border-radius:10px;
+  animation: toto 3s backwards;
+  animation-timeline:view();
+  animation-range: 0%  50%
+}
+hr{
+  width:90%;
+}
+@keyframes toto{
+  from{
+    scale:0;
+    opacity: 0;
+  }
+  to{
+    scale:1;
+    opacity:1;
+  }
+}
+@keyframes soso{
+  from{
+    scale:0;
+    opacity: 0;
+  }
+  to{
+    scale:1;
+    opacity: 1;
+  }
+}
+label{
+  color:white;
+  margin-left:20px
+}
+.con2{
+  display:flex;
+  align-items: center
+}
+p{
+  color:white;
+  text-align: center;
+  width:70%;
+  text-wrap: wrap;
+  animation: para 2s backwards;
+  animation-timeline:view();
+  animation-range: 0%  50%
+}
+@keyframes para{
+  from{
+    opacity: 0;
+    scale:0
+  }
+  to{
+    opacity: 1;
+    scale:1
+  }
+}
+a{
+  color:black;
+  text-decoration:none;
+  width:100%;
+  margin-right:33px;
+}
+html {
+  scroll-behavior: smooth;
+}
+@keyframes title{
+  0%{
+    translate:0
+  }
+  50%{
+    translate:0 50px;
+    rotate:-5deg
+  }
+  100%{
+    translate:0 -10px;
+    rotate:5deg
+  }
+}
